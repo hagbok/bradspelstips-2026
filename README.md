@@ -2,6 +2,10 @@
 
 En statisk webbsida som bygger på `Brädspelstips 2024.docx`.
 
+**Live:** https://hagbok.github.io/bradspelstips-2026/
+
+Publicera ändringar: `git add -A`, `git commit -m "..."`, `git push`. Sidan uppdateras efter någon minut.
+
 ## Filer
 - `docs/index.html`: sidan med intro, butiker och PS
 - `docs/games.js`: **alla spel, kategorier och butiker**. Det är bara den här filen du behöver ändra.
