@@ -341,6 +341,13 @@ const GAMES = [
     bgg: "https://boardgamegeek.com/boardgame/274960/point-salad",
     text: "",
   },
+  {
+    name: "DNUP",
+    cat: "snabba", isNew: true,
+    players: "2-5", time: "15-20 min", age: "8+",
+    bgg: "https://boardgamegeek.com/boardgame/432456",
+    text: "",
+  },
 ];
 
 const SHOPS = {
