@@ -33,7 +33,6 @@
     return `
       <article class="game${g.isNew ? " is-new" : ""}">
         <div class="game-head">
-          ${g.rating ? `<span class="chip rating" title="Snittbetyg på BoardGameGeek">${Number(g.rating).toFixed(1)}</span>` : ""}
           <div>
             <h3><a href="${esc(g.bgg)}" target="_blank" rel="noopener">${esc(g.name)}</a>${g.isNew ? ' <span class="badge">Nytt 2026</span>' : ""}</h3>
             ${g.alt ? `<p class="alt">${esc(g.alt)}</p>` : ""}
@@ -42,8 +41,6 @@
         <ul class="stats">
           ${stat("👥", g.players, "Antal spelare")}
           ${stat("⏱", g.time, "Speltid")}
-          ${stat("🎂", g.age, "Ålder")}
-          ${g.weight ? `<li title="Tyngd (1-5)"><span aria-hidden="true">⚖</span> ${String(g.weight).replace(".", ",")}/5</li>` : ""}
         </ul>
         <div class="text">${paras}</div>
         <div class="links"><a href="${esc(g.bgg)}" target="_blank" rel="noopener">BoardGameGeek ↗</a>${extra}</div>
