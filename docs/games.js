@@ -274,6 +274,73 @@ const GAMES = [
     bgg: "https://boardgamegeek.com/boardgame/299027/colt-super-express",
     text: "Kortversionen av Colt Express. Alla är cowboys på ett rullande tåg där vagnarna lossnar en efter en. Varje runda väljer du tre kort som ”programmerar” vad din figur ska göra: vända sig, gå, klättra eller skjuta. Sedan turas man om att vända sina kort och utföra draget. Sist kvar på tåget med mest pengar vinner. Expansionen med häst och reflex rekommenderas och följer med den svenska versionen. Ett snabbt, roligt spel med mycket skadeglädje.",
   },
+
+  // ================= NYHETER 2026 =================
+  // Skriv din text i  text: ""  för varje spel nedan.
+  // Tills texten är ifylld visas "Text kommer snart…" på sidan.
+  {
+    name: "Cascadia",
+    cat: "strategi", isNew: true,
+    players: "1-4", time: "30-45 min", age: "10+", rating: 7.9, weight: 1.9,
+    bgg: "https://boardgamegeek.com/boardgame/295947/cascadia",
+    text: "",
+  },
+  {
+    name: "Hitster",
+    cat: "party", isNew: true,
+    players: "2-10", time: "30 min", age: "16+", rating: 7.4, weight: 1.0,
+    bgg: "https://boardgamegeek.com/boardgame/318243/hitster",
+    text: "",
+  },
+  {
+    name: "Decrypto",
+    cat: "party", isNew: true,
+    players: "3-8", time: "15-45 min", age: "12+", rating: 7.7, weight: 1.8,
+    bgg: "https://boardgamegeek.com/boardgame/225694/decrypto",
+    text: "",
+  },
+  {
+    name: "Kluster",
+    cat: "abstrakt", isNew: true,
+    players: "1-4", time: "10-20 min", age: "14+", rating: 6.5, weight: 1.0,
+    bgg: "https://boardgamegeek.com/boardgame/277458/kluster",
+    text: "",
+  },
+  {
+    name: "Sky Team",
+    cat: "samarbete", isNew: true,
+    players: "2", time: "15 min", age: "12+", rating: 7.9, weight: 1.9,
+    bgg: "https://boardgamegeek.com/boardgame/373106/sky-team",
+    text: "",
+  },
+  {
+    name: "Bomb Busters",
+    cat: "samarbete", isNew: true,
+    players: "2-5", time: "30 min", age: "10+", rating: 8.0, weight: 1.9,
+    bgg: "https://boardgamegeek.com/boardgame/413246/bomb-busters",
+    text: "",
+  },
+  {
+    name: "The Fellowship of the Ring: Trick-Taking Game",
+    cat: "samarbete", isNew: true,
+    players: "1-4", time: "20 min", age: "10+", rating: 8.0, weight: 2.0,
+    bgg: "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Fellowship+of+the+Ring+Trick-Taking",
+    text: "",
+  },
+  {
+    name: "Scout",
+    cat: "snabba", isNew: true,
+    players: "2-5", time: "15 min", age: "9+", rating: 7.8, weight: 1.4,
+    bgg: "https://boardgamegeek.com/boardgame/291453/scout",
+    text: "",
+  },
+  {
+    name: "Point Salad",
+    cat: "snabba", isNew: true,
+    players: "2-6", time: "15-30 min", age: "8+", rating: 7.2, weight: 1.2,
+    bgg: "https://boardgamegeek.com/boardgame/274960/point-salad",
+    text: "",
+  },
 ];
 
 const SHOPS = {

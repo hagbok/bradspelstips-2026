@@ -25,7 +25,9 @@
   }
 
   function card(g) {
-    const paras = g.text.split(/\n\n/).map((p) => `<p>${esc(p)}</p>`).join("");
+    const paras = g.text.trim()
+      ? g.text.split(/\n\n/).map((p) => `<p>${esc(p)}</p>`).join("")
+      : `<p class="todo">Text kommer snart…</p>`;
     const extra = (g.extra || []).map((e) => `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.label)} ↗</a>`).join("");
     const stat = (icon, val, label) => (val ? `<li title="${label}"><span aria-hidden="true">${icon}</span> ${esc(val)}</li>` : "");
     return `
@@ -51,7 +53,8 @@
   function render() {
     let html = "", total = 0;
     for (const c of CATEGORIES) {
-      const games = GAMES.filter((g) => g.cat === c.id && fits(g));
+      const games = GAMES.filter((g) => g.cat === c.id && fits(g))
+        .sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
       if (!games.length) continue;
       total += games.length;
       html += `<section class="cat" id="${c.id}"><h2><span class="cat-icon" aria-hidden="true">${c.icon}</span>${esc(c.name)}</h2><div class="grid">${games.map(card).join("")}</div></section>`;
@@ -90,8 +93,11 @@
   $("#players").addEventListener("change", (e) => { state.players = e.target.value; render(); });
   $("#onlyNew").addEventListener("change", (e) => { state.onlyNew = e.target.checked; render(); });
 
-  // Hide "Bara nyheter" until there are new games
-  if (!GAMES.some((g) => g.isNew)) $("#onlyNew").closest("label").hidden = true;
+  // Show "Nytt 2026 (n)" toggle only when there are new games
+  const newCount = GAMES.filter((g) => g.isNew).length;
+  const newLabel = $("#onlyNew").closest("label");
+  if (!newCount) newLabel.hidden = true;
+  else newLabel.lastChild.textContent = ` Bara nytt 2026 (${newCount})`;
 
   renderCats();
   renderShops();
