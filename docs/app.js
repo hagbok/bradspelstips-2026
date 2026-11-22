@@ -33,15 +33,16 @@
     return `
       <article class="game${g.isNew ? " is-new" : ""}">
         <div class="game-head">
+          ${g.img ? `<a class="cover" href="${esc(g.bgg)}" target="_blank" rel="noopener"><img src="${esc(g.img)}" alt="${esc(g.name)}" loading="lazy"></a>` : ""}
           <div>
             <h3><a href="${esc(g.bgg)}" target="_blank" rel="noopener">${esc(g.name)}</a>${g.isNew ? ' <span class="badge">Nytt 2026</span>' : ""}</h3>
             ${g.alt ? `<p class="alt">${esc(g.alt)}</p>` : ""}
+            <ul class="stats">
+              ${stat("👥", g.players, "Antal spelare")}
+              ${stat("⏱", g.time, "Speltid")}
+            </ul>
           </div>
         </div>
-        <ul class="stats">
-          ${stat("👥", g.players, "Antal spelare")}
-          ${stat("⏱", g.time, "Speltid")}
-        </ul>
         <div class="text">${paras}</div>
         <div class="links"><a href="${esc(g.bgg)}" target="_blank" rel="noopener">BoardGameGeek ↗</a>${extra}</div>
       </article>`;

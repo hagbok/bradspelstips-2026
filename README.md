@@ -6,7 +6,7 @@ En statisk webbsida som bygger på `Brädspelstips 2024.docx`.
 
 Publicera ändringar: `git add -A`, `git commit -m "..."`, `git push`. Sidan uppdateras efter någon minut.
 
-Höj versionsnumret `?v=3` på tre ställen i `docs/index.html` när du publicerar. Annars kan besökarnas webbläsare visa gamla `games.js`/`app.js`/`style.css` i upp till 10 minuter.
+Höj versionsnumret `?v=4` på tre ställen i `docs/index.html` när du publicerar. Annars kan besökarnas webbläsare visa gamla `games.js`/`app.js`/`style.css` i upp till 10 minuter.
 
 ## Filer
 - `docs/index.html`: sidan med intro, butiker och PS

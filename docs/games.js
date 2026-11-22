@@ -9,6 +9,7 @@
 //   cat      Kategori-id (se CATEGORIES nedan)
 //   players  Antal spelare, t.ex. "2-5"
 //   time     Speltid, t.ex. "30-60 min"
+//   img      (valfritt) bild på lådan, t.ex. "img/azul.jpg"
 //   bgg      Länk till spelet på BoardGameGeek
 //   extra    (valfritt) lista med fler länkar: [{ label, url }]
 //   text     Beskrivning (stycken separeras med \n\n)
@@ -29,6 +30,7 @@ const GAMES = [
   // ---------------- Strategispel ----------------
   {
     name: "Ticket to Ride",
+    img: "img/ticket-to-ride.jpg",
     cat: "strategi",
     players: "2-5", time: "30-60 min",
     bgg: "https://boardgamegeek.com/boardgame/9209/ticket-ride",
@@ -36,6 +38,7 @@ const GAMES = [
   },
   {
     name: "Carcassonne",
+    img: "img/carcassonne.jpg",
     cat: "strategi",
     players: "2-5", time: "30-45 min",
     bgg: "https://boardgamegeek.com/boardgame/822/carcassonne",
@@ -43,6 +46,7 @@ const GAMES = [
   },
   {
     name: "Catan",
+    img: "img/catan.jpg",
     alt: "The Settlers of Catan",
     cat: "strategi",
     players: "3-4", time: "60-120 min",
@@ -51,6 +55,7 @@ const GAMES = [
   },
   {
     name: "Kingdomino",
+    img: "img/kingdomino.jpg",
     cat: "strategi",
     players: "2-4", time: "15 min",
     bgg: "https://boardgamegeek.com/boardgame/204583/kingdomino",
@@ -58,6 +63,7 @@ const GAMES = [
   },
   {
     name: "Diamant",
+    img: "img/diamant.jpg",
     cat: "strategi",
     players: "3-8", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/15512/diamant",
@@ -65,6 +71,7 @@ const GAMES = [
   },
   {
     name: "Splendor",
+    img: "img/splendor.jpg",
     cat: "strategi",
     players: "2-4", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/148228/splendor",
@@ -74,6 +81,7 @@ const GAMES = [
   // ---------------- Partyspel & frågespel ----------------
   {
     name: "När då då?",
+    img: "img/nar-da-da.jpg",
     alt: "Chronology",
     cat: "party",
     players: "2-8", time: "30 min",
@@ -82,6 +90,7 @@ const GAMES = [
   },
   {
     name: "Bezzerwizzer Timeline",
+    img: "img/bezzerwizzer-timeline.jpg",
     alt: "Timeline",
     cat: "party",
     players: "2-8", time: "15-30 min",
@@ -91,6 +100,7 @@ const GAMES = [
   },
   {
     name: "Codenames",
+    img: "img/codenames.jpg",
     cat: "party",
     players: "4-8", time: "15 min",
     bgg: "https://boardgamegeek.com/boardgame/178900/codenames",
@@ -98,6 +108,7 @@ const GAMES = [
   },
   {
     name: "Dixit",
+    img: "img/dixit.jpg",
     cat: "party",
     players: "3-6", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/39856/dixit",
@@ -105,6 +116,7 @@ const GAMES = [
   },
   {
     name: "GiftTRAP",
+    img: "img/gifttrap.jpg",
     cat: "party",
     players: "3-8", time: "45 min",
     bgg: "https://boardgamegeek.com/boardgame/23686/gifttrap",
@@ -114,6 +126,7 @@ const GAMES = [
   // ---------------- Tärningsspel ----------------
   {
     name: "That's Pretty Clever!",
+    img: "img/that-s-pretty-clever.jpg",
     alt: "Ganz schön clever",
     cat: "tarning",
     players: "1-4", time: "30 min",
@@ -122,6 +135,7 @@ const GAMES = [
   },
   {
     name: "Pickomino",
+    img: "img/pickomino.jpg",
     cat: "tarning",
     players: "2-7", time: "20-30 min",
     bgg: "https://boardgamegeek.com/boardgame/15818/pickomino",
@@ -129,6 +143,7 @@ const GAMES = [
   },
   {
     name: "Las Vegas",
+    img: "img/las-vegas.jpg",
     cat: "tarning",
     players: "2-5", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/117959/las-vegas",
@@ -138,6 +153,7 @@ const GAMES = [
   // ---------------- Abstrakta spel ----------------
   {
     name: "Azul",
+    img: "img/azul.jpg",
     cat: "abstrakt",
     players: "2-4", time: "30-45 min",
     bgg: "https://boardgamegeek.com/boardgame/230802/azul",
@@ -145,6 +161,7 @@ const GAMES = [
   },
   {
     name: "Set",
+    img: "img/set.jpg",
     cat: "abstrakt",
     players: "1-20", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/1198/set",
@@ -152,6 +169,7 @@ const GAMES = [
   },
   {
     name: "Helt Genialt",
+    img: "img/helt-genialt.jpg",
     alt: "Ingenious",
     cat: "abstrakt",
     players: "1-4", time: "45 min",
@@ -160,6 +178,7 @@ const GAMES = [
   },
   {
     name: "Blokus",
+    img: "img/blokus.jpg",
     cat: "abstrakt",
     players: "2-4", time: "20 min",
     bgg: "https://boardgamegeek.com/boardgame/2453/blokus",
@@ -167,6 +186,7 @@ const GAMES = [
   },
   {
     name: "Ricochet Robots",
+    img: "img/ricochet-robots.jpg",
     cat: "abstrakt",
     players: "1-99", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/51/ricochet-robots",
@@ -176,6 +196,7 @@ const GAMES = [
   // ---------------- Samarbetsspel ----------------
   {
     name: "The Crew",
+    img: "img/the-crew.jpg",
     alt: "The Quest for Planet Nine",
     cat: "samarbete",
     players: "2-5", time: "20 min",
@@ -184,6 +205,7 @@ const GAMES = [
   },
   {
     name: "Forbidden Island",
+    img: "img/forbidden-island.jpg",
     cat: "samarbete",
     players: "2-4", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/65244/forbidden-island",
@@ -191,6 +213,7 @@ const GAMES = [
   },
   {
     name: "Exit – The Game",
+    img: "img/exit-the-game.jpg",
     cat: "samarbete",
     players: "1-4", time: "60-120 min",
     bgg: "https://boardgamegeek.com/boardgame/203420/exit-game-abandoned-cabin",
@@ -198,6 +221,7 @@ const GAMES = [
   },
   {
     name: "Hanabi",
+    img: "img/hanabi.jpg",
     cat: "samarbete",
     players: "2-5", time: "25 min",
     bgg: "https://boardgamegeek.com/boardgame/98778/hanabi",
@@ -205,6 +229,7 @@ const GAMES = [
   },
   {
     name: "Pandemic",
+    img: "img/pandemic.jpg",
     cat: "samarbete",
     players: "2-4", time: "45 min",
     bgg: "https://boardgamegeek.com/boardgame/30549/pandemic",
@@ -213,6 +238,7 @@ const GAMES = [
   },
   {
     name: "MicroMacro: Crime City",
+    img: "img/micromacro-crime-city.jpg",
     cat: "samarbete",
     players: "1-4", time: "15-45 min",
     bgg: "https://boardgamegeek.com/boardgame/318977/micromacro-crime-city",
@@ -222,6 +248,7 @@ const GAMES = [
   // ---------------- För två ----------------
   {
     name: "Patchwork",
+    img: "img/patchwork.jpg",
     cat: "tva",
     players: "2", time: "15-30 min",
     bgg: "https://boardgamegeek.com/boardgame/163412/patchwork",
@@ -229,6 +256,7 @@ const GAMES = [
   },
   {
     name: "Mr. Jack",
+    img: "img/mr-jack.jpg",
     cat: "tva",
     players: "2", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/21763/mr-jack",
@@ -236,6 +264,7 @@ const GAMES = [
   },
   {
     name: "Santorini",
+    img: "img/santorini.jpg",
     cat: "tva",
     players: "2-4", time: "20 min",
     bgg: "https://boardgamegeek.com/boardgame/194655/santorini",
@@ -245,6 +274,7 @@ const GAMES = [
   // ---------------- Snabba kortspel ----------------
   {
     name: "No Thanks!",
+    img: "img/no-thanks.jpg",
     cat: "snabba",
     players: "3-7", time: "20 min",
     bgg: "https://boardgamegeek.com/boardgame/12942/no-thanks",
@@ -252,6 +282,7 @@ const GAMES = [
   },
   {
     name: "For Sale",
+    img: "img/for-sale.jpg",
     cat: "snabba",
     players: "3-6", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/172/sale",
@@ -259,6 +290,7 @@ const GAMES = [
   },
   {
     name: "Love Letter",
+    img: "img/love-letter.jpg",
     cat: "snabba",
     players: "2-6", time: "20 min",
     bgg: "https://boardgamegeek.com/boardgame/277085/love-letter",
@@ -266,6 +298,7 @@ const GAMES = [
   },
   {
     name: "Colt Super Express",
+    img: "img/colt-super-express.jpg",
     cat: "snabba",
     players: "3-7", time: "20 min",
     bgg: "https://boardgamegeek.com/boardgame/299027/colt-super-express",
