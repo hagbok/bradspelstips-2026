@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brädspelstips 2026</title>
+  <meta name="description" content="Peters brädspelstips inför julklappsjakten 2026 – kategoriserade tips med länkar till BoardGameGeek.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">Hohoho!</p>
+      <h1>Brädspelstips <span>2026</span></h1>
+      <p class="lead">Så var det dags för årets brädspelstips – några uppslag inför klappjakten, eftersom recensionerna i våra svenska tidningar kan vara ganska godtyckliga.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <p>Nedan följer några godingar som jag försökt kategorisera. Sist på sidan finns länkar till olika butiker.</p>
+      <p>Varje spel har lite fakta från <a href="https://boardgamegeek.com" target="_blank" rel="noopener">BoardGameGeek</a>, en brädspelssajt med en databas på över 100&nbsp;000 spel. Där kan man läsa mer, se fler bilder, titta på regelgenomgångar och läsa omdömen.</p>
+
+      <details class="legend">
+        <summary>Hur tolkar man faktarutan?</summary>
+        <dl>
+          <div><dt><span class="chip rating">7.4</span> Betyg</dt><dd>Snittbetyg (1-10) från medlemmar på BoardGameGeek. Det finns färre än 15 spel med betyg över 8 eftersom smaken skiljer sig. 6 och uppåt brukar betyda att det är ett bra spel.</dd></div>
+          <div><dt>👥 Spelare</dt><dd>Antal spelare enligt lådan.</dd></div>
+          <div><dt>⏱ Speltid</dt><dd>Lägg till regelgenomgång och räkna alltid med längre tid.</dd></div>
+          <div><dt>🎂 Ålder</dt><dd>Rekommenderad ålder enligt lådan. Ofta satt för högt om du har engagerade barn.</dd></div>
+          <div><dt>⚖ Tyngd</dt><dd>Komplexitet (1-5) efter magkänsla. Som jämförelse har Yatzy 1,2, Fia 1,2, Monopol 1,7, Risk 2,1 och Schack 3,7.</dd></div>
+        </dl>
+      </details>
+    </section>
+
+    <nav class="toolbar" aria-label="Filter">
+      <div class="cats" id="cats"></div>
+      <div class="filters">
+        <input type="search" id="q" placeholder="Sök spel…" aria-label="Sök spel">
+        <select id="players" aria-label="Antal spelare">
+          <option value="">Alla antal</option>
+          <option value="2">2 spelare</option>
+          <option value="3">3 spelare</option>
+          <option value="4">4 spelare</option>
+          <option value="5">5 spelare</option>
+          <option value="6">6+ spelare</option>
+        </select>
+        <label class="toggle"><input type="checkbox" id="onlyNew"> Bara nyheter</label>
+      </div>
+    </nav>
+
+    <p class="nohits" id="nohits" hidden>Inga spel matchar filtret.</p>
+    <div id="list"></div>
+
+    <section class="shops" id="butiker">
+      <h2>Butiker m.m.</h2>
+      <p>Jag skulle kunna hålla på ett bra tag till, men ovan har ni bra spel som uppskattas av de flesta och inte är alltför komplexa. <strong>Och var får man då tag på dem?</strong></p>
+      <p>Några enstaka, som Ticket to Ride, När då då?, Carcassonne, Helt Genialt, Set och Catan, kan man hitta hos större bokhandlare och leksaksaffärer. Det finns dock några specialbutiker som har de flesta av ovanstående titlar. Om du inte varit i en riktig spelbutik någon gång är det en upplevelse :)</p>
+      <div class="shopgrid" id="shops"></div>
+      <p class="note">Om man beställer inom EU kan man hitta bra erbjudanden ibland. Glöm bara inte att räkna in frakt och dubbelkolla att spelen är språkoberoende eller på något språk både du och medspelarna behärskar. Många moderna spel är språkoberoende idag.</p>
+    </section>
+
+    <section class="signoff">
+      <p class="god">God SpelJul!</p>
+      <p>/Peter</p>
+    </section>
+
+    <details class="ps">
+      <summary>PS – om tidningsrecensioner</summary>
+      <p>Årets familjespel 2014, ”La Boca”, fick följande recension av Göteborgsposten: <em>”Så tyckte barnen: Rörigt. Svårt. Tråkigt. ’Måste vi spela klart?’ Ja, barn, det måste vi. Sedan slänger vi skiten.”</em></p>
+      <p>Kul skrivet, men undrar hur många som tittade närmare på det. På världens största brädspelsforum har det betyget 7/10 och var rankat som ungefär världens 1100:e bästa spel (av över 100&nbsp;000). Inte något fantastiskt spel i mina ögon, men kan vara kul att köra några partier ibland.</p>
+      <p>Även ”Camel Up” utmärkte sig internationellt (bland världens 100 bästa familjespel enligt samma forum). Det fick full pott i Göteborgsposten (5/5) medan Expressen skrev: <em>”Vi fann det omöjligt att ge betyg då vi inte förstod hur man ska spela spelet.”</em> Det är faktiskt hela 3049 ord i de rikt illustrerade reglerna. Man får dock erkänna att det är fler än för Monopol (2249), som de klarade av. Å andra sidan hade tidningen Leva&amp;Bo problem med reglerna till Kingdomino (1316 ord totalt).</p>
+      <p>På tal om Monopol så gavs det ut första gången 1933. Bilar har utvecklats sedan dess, och det har faktiskt hänt en del på spelsidan också – om man vågar testa något nytt.</p>
+    </details>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Betyg och tyngd är ungefärliga värden från BoardGameGeek – klicka på spelet för aktuella siffror.</p>
+  </footer>
+
+  <script src="games.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
