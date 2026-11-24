@@ -313,14 +313,14 @@ const GAMES = [
     cat: "strategi", isNew: true,
     players: "1-4", time: "30-45 min",
     bgg: "https://boardgamegeek.com/boardgame/295947/cascadia",
-    text: "",
+    text: "Ett pusselspel där du väljer en av 4 paket med djur och terräng, sedan försöker du bygga ditt landskap och placera djuren för att få så många poäng som möjligt. Man tävlar om största område i olika klasser och kan samla kottar som låter dig göra specialdrag. I varje parti kan djuren ge poäng på olika sätt vilket ger bra variation.",
   },
   {
     name: "Hitster",
     cat: "party", isNew: true,
     players: "2-10", time: "30 min",
     bgg: "https://boardgamegeek.com/boardgame/318243/hitster",
-    text: "",
+    text: "Hister kom för några år sedan och är här för att stanna. Dra ett kort, scanna med en app och lyssna. Kom Born in the USA ut före eller efter Fångad av en stormvind? Iochmed att man kan känna igen musik utan att ha full koll är det ett spel som engagerar. Man kan spela med att namnge artister och låttitlar, eller bara lägga dem i tidsordning. Det finns flera varianter med olika musiksamlingar och stilar. Min favorit är med filmmusik, det finns även en med bara jullåtar och den senaste som lanseras nu till julhandeln har bara mello-låtar!",
   },
   {
     name: "Decrypto",
