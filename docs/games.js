@@ -395,7 +395,4 @@ const SHOPS = {
   prices: [
     { name: "Brädspelspriser", url: "https://bradspelspriser.se/" },
   ],
-  abroad: [
-    { name: "Milan-Spiele (Tyskland)", url: "https://www.milan-spiele.de/" },
-  ],
 };
