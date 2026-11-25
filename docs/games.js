@@ -23,7 +23,7 @@ const CATEGORIES = [
   { id: "abstrakt", name: "Abstrakta spel", icon: "◆" },
   { id: "samarbete", name: "Samarbetsspel", icon: "🤝" },
   { id: "tva", name: "För två", icon: "♥" },
-  { id: "snabba", name: "Snabba kortspel", icon: "🃏" },
+  { id: "snabba", name: "Kluriga kortspel", icon: "🃏" },
 ];
 
 const GAMES = [
@@ -355,7 +355,7 @@ const GAMES = [
     cat: "samarbete", isNew: true,
     players: "1-4", time: "20 min",
     bgg: "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Fellowship+of+the+Ring+Trick-Taking",
-    text: "Ett vackert spel där man delat upp boken Sagan om ringen i 18 kapitel med olika utmaningar. Man samarbetsspel och spelar karaktärer med olika uppdrag (ta minst antal stick, ta stick med svarta kort i osv). Efter varje avklarat kapitel kan man få fler karaktärer, kort mm. Går enkelt att återställa eller spela vidare med om man klarat alla kapitel. Påminner om The Crew, fast elegantare på alla sätt.",
+    text: "Ett vackert stickspel där man delat upp boken Sagan om ringen i 18 kapitel med olika utmaningar. Man samarbetsspel och spelar karaktärer med olika uppdrag (ta minst antal stick, ta stick med svarta kort i osv). Efter varje avklarat kapitel kan man få fler karaktärer, kort mm. Går enkelt att återställa eller spela vidare med om man klarat alla kapitel. Påminner om The Crew, fast elegantare på alla sätt.",
   },
   {
     name: "Scout",
@@ -369,14 +369,14 @@ const GAMES = [
     cat: "snabba", isNew: true,
     players: "2-6", time: "15-30 min",
     bgg: "https://boardgamegeek.com/boardgame/274960/point-salad",
-    text: "",
+    text: "Varje runda får du antingen ta en ny regel, eller två grönsaker. Försök hitta kombinationer som ger dig mycket poäng, och akta dig för minuspoängen. Du kan även snegla på vad motståndarna gör och försöka stjäla de kort de behöver bäst om det går för bra för dem.",
   },
   {
     name: "DNUP",
     cat: "snabba", isNew: true,
     players: "2-5", time: "15-20 min",
     bgg: "https://boardgamegeek.com/boardgame/432456",
-    text: "",
+    text: "Årets nykomling 2026. Försök att bli av med dina kort snabbast genom att spela ut kombinationer med samma siffra. Om det är lika många kort som andra spelade kort måste de vara högre. Är dina kort kvar efter ett varv kan du kasta dem, men om någon spelar högre under rundan måste du ta upp dem igen - och vända dem! Alla kort har 2 siffror och när du vänder får du nya siffror. En pusselkapplöpning där man lägger ut, plockar upp och vänder för att lyckas gå ut. Ett riktigt bra taktiskt spel på 2 spelare, men även bra med upp till 5.",
   },
 ];
 
